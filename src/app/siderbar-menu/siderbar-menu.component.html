@@ -1,0 +1,76 @@
+      <mat-toolbar color="primary" class="example-toolbar">
+          <!-- <button class="menu-btn" (click)="isExpanded = !isExpanded"> -->
+              <button class="menu-btn" (click)="toggleSidebar()"> 
+              <mat-icon class="menu-icon">menu</mat-icon></button>
+          <!-- <mat-icon>local_cafe</mat-icon> -->
+          <mat-icon>store</mat-icon>
+          <h1 class="example-app-name">
+              Cafe Management System</h1>
+              <div class="logout" (click)="logout()" matTooltip="Logout" [routerLink]="['/']" >
+                  <mat-icon>logout</mat-icon>
+              </div>
+      </mat-toolbar>
+      <mat-sidenav-container class="example-container">
+          <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+              <mat-nav-list (click)="showSubmenu = !showSubmenu">
+                <!-- Dashboard -->
+                <!-- <a mat-list-item routerLink="/dashboard-main">
+                    <span class="full-width" >Dashboard</span>
+                    <mat-icon mat-list-icon>dashboard</mat-icon>
+                </a> -->
+                <a mat-list-item routerLink="/siderbar-menu" [queryParams]="{ component: 'dashboard-main' }">
+                  <span class="full-width">Dashboard</span>
+                  <mat-icon mat-list-icon>dashboard</mat-icon>
+                </a>
+                  <!-- Manage Category -->
+              <!-- <a mat-list-item routerLink="/manage-category">
+                  <span class="full-width">Manage Category</span>
+                  <mat-icon mat-list-icon>category</mat-icon>
+              </a> -->
+
+              <a mat-list-item routerLink="/siderbar-menu" [queryParams]="{ component: 'manage-category' }">
+                <span class="full-width">Manage Category</span>
+                <mat-icon mat-list-icon>category</mat-icon>
+              </a>
+
+              <!-- Manage Product -->
+              <a mat-list-item routerLink="/siderbar-menu" [queryParams]="{ component: 'manage-product' }">
+                  <span class="full-width">Manage Product</span>
+                  <mat-icon mat-list-icon>inventory</mat-icon>
+              </a>
+
+              <!-- Manage Order -->
+              <a mat-list-item routerLink="/siderbar-menu" [queryParams]="{ component: 'manage-order' }">
+                  <span class="full-width">Manage Order</span>
+                  <mat-icon mat-list-icon>shopping_cart</mat-icon>
+              </a>
+
+              <!-- View Bills -->
+              <a mat-list-item routerLink="/siderbar-menu" [queryParams]="{ component: 'view-bill' }">
+                  <span class="full-width">View Bills</span>
+                  <mat-icon mat-list-icon>receipt</mat-icon>
+              </a>
+
+              <!-- Manage Users -->
+              <a mat-list-item routerLink="/siderbar-menu" [queryParams]="{ component: 'manage-users' }">
+                  <span class="full-width">Manage Users</span>
+                  <mat-icon mat-list-icon>supervisor_account</mat-icon>
+              </a>
+            </mat-nav-list>
+          </mat-sidenav>
+
+          <div class="example-sidenav-content">
+            <app-dashboard-main *ngIf="componentToShow === 'dashboard-main'"></app-dashboard-main> 
+            <app-manage-category *ngIf="componentToShow === 'manage-category'"></app-manage-category> 
+            <app-manage-product *ngIf="componentToShow === 'manage-product'"></app-manage-product>
+            <app-manage-order *ngIf="componentToShow === 'manage-order'"></app-manage-order> 
+            <app-view-bill *ngIf="componentToShow === 'view-bill'"></app-view-bill> 
+            <app-manage-user *ngIf="componentToShow === 'manage-users'"></app-manage-user> 
+          </div>
+
+
+        <!-- <app-login></app-login> -->
+
+      </mat-sidenav-container>
+      
+

@@ -1,0 +1,57 @@
+
+.category-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%; /* Set the width to 100% */
+  box-sizing: border-box;
+  margin-left: 3%;
+  margin-top: 1%;
+  box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}
+.table-category{
+  width: 95%; 
+  margin-left: 3%;
+  margin-top: 1%;
+  box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}
+
+.filter-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%; /* Set the width to 100% */
+  box-sizing: border-box;
+  margin-left: 3%;
+  margin-top: 1%;
+  box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}
+/* Style the input field */
+.mat-form-field {
+  flex: 1; /* Take up available space */
+  margin-right: 10px;
+}     
+
+.right-side {
+  margin-left: 10px;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  margin-right: 5px;
+}

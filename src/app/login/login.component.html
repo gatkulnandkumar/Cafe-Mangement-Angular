@@ -1,0 +1,48 @@
+
+    <form [formGroup]="loginForm" class="login-form d-flex flex-column align-items-center" (ngSubmit)="login()">
+      <h1>Login</h1>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <div class="password-input-wrapper">
+          <input [type]="passwordVisible ? 'text' : 'password'" id="password" class="form-control" formControlName="password"
+            placeholder="Enter your password">
+          <i class="password-toggle fas" [ngClass]="{'fa-eye-slash': !passwordVisible, 'fa-eye': passwordVisible}"
+            (click)="togglePasswordVisibility()"></i>
+        </div>
+      </div>
+      <div style="margin-bottom: 3%; margin-left: 22%; font-weight: 500;">
+        <a (click)="handleForgotPasswsAction()"> Forgot Password</a>
+      </div>
+      <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-success">Login</button>
+        <button type="button" class="btn btn-secondary mx-2" (click)="loginCancel()">Cancel</button>
+      </div>
+      <div class="register-link my-3" style="margin-bottom: 3%;font-weight: 500;">
+        <p>Don't have an account? <a href="/signup">Register Here</a></p>
+      </div>
+      <!-- <div class="login-options d-flex flex-column align-items-center">
+        <button type="button" class="btn btn-primary">
+          <i class="fab fa-facebook"></i> Login with Facebook
+        </button>
+        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1426567066%3A1689138446366829&hl=en-GB&ifkv=AeDOFXjZKTtM5i5D11FhmMS6k_544RkYXTz5Q1XgCE4PmQZlXb5lwY4YUVVqv3gx5TrFEjtv6yEW0w&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+          target="_blank" class="btn btn-outline-dark my-3">
+          <i class="fab fa-google"></i> Login with Google
+        </a>
+      </div> -->
+    </form>
+
+    <!-- <div class="example-sidenav-content">
+      <app-dashboard-main *ngIf="componentToShow === 'dashboard-main'"></app-dashboard-main> 
+    </div> -->
+    
+    
+
+    
+    
+    
+    
+    

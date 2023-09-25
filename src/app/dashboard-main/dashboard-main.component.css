@@ -1,0 +1,97 @@
+.example-container {
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    
+  }
+  .example-toolbar{
+    background-color: rgb(71, 2, 2)
+  }
+  .menu-icon{
+    color: antiquewhite;
+  }
+
+  .custom-card{
+    margin-top: 10%;
+    margin-right: 16px;
+    box-shadow: 2px 6px 6px rgb(94, 93, 93);
+    height: 40%;
+    width: 30%;
+  }
+  .custom-card mat-card-header,
+.custom-card mat-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-primary-button{
+    background-color: #2367f8;
+    color: aliceblue;
+}
+  
+  .example-sidenav{
+    background-color:bisque;
+  }
+
+  /* .example-sidenav-content{
+    background-color:antiquewhite;
+  } */
+  .example-sidenav-content {
+    
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .example-sidenav {
+     user-select: none;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+  }
+  .menu-btn{
+    border-radius: 5px;
+    background-color: rgb(71, 2, 2);
+    border-color: antiquewhite;
+    margin-right: 10px;
+    height: 30px;
+    width: 50px;
+  }
+  .menu-button.rotated {
+    transform: rotate(180deg);
+  }
+  .submenu {
+    overflow-y: hidden;
+    transition: transform 300ms ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    padding-left: 30px;
+  }
+  .submenu.expanded {
+    transform: scaleY(1);
+  }
+
+  .logout{
+    margin-left: 70%;
+  }
+
+  .dashboard-card{
+    /* padding: 20px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; /* Set the width to 100% */
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 8px 6px 8px rgb(95, 94, 94);
+   }
+
+  

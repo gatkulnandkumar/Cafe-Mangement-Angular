@@ -1,0 +1,36 @@
+/* Apply some basic styling to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
+  /* Style the table header cells */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the table data cells */
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Add alternating row background colors */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add hover effect to rows */
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+  .mat-dialog-close{
+    margin-left: 90%
+  }
+  

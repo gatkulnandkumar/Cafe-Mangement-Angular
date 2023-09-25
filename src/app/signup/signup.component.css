@@ -1,0 +1,30 @@
+.signup{
+    border: 1px solid black; 
+    border-radius: 30px;
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 20px;
+    background-color: rgb(255,251,246);
+    box-shadow: 2px 2px 15px 10px rgba(150, 149, 149, 0.8);
+    position: relative;
+}
+
+.password-input-wrapper {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  label{
+    font-weight: bold;
+  }
+  .form-group{
+    margin-bottom: 2%;
+  }

@@ -1,0 +1,64 @@
+mat-form-field{
+    padding-left: 20px;
+}
+
+.float-right{
+    float: right;
+}
+
+table{
+    width: 100%;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; 
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}
+
+.customer-details{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; 
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}
+
+.select-product{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; 
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}
+
+.responsive_table table{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; 
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}

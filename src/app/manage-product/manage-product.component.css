@@ -1,0 +1,39 @@
+.float-right{
+  float: right;
+}
+
+.product-card{
+ /* padding: 20px;*/
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ width: 95%; /* Set the width to 100% */
+ box-sizing: border-box;
+ margin-left: 3%;
+ margin-top: 1%;
+ box-shadow: 8px 6px 8px rgb(95, 94, 94);
+}
+
+.filter-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%; /* Set the width to 100% */
+  box-sizing: border-box;
+  margin-left: 3%;
+  margin-top: 1%;
+  box-shadow: 5px 6px 8px rgb(95, 94, 94);
+}
+
+.responsive_table table{
+  width: 95%; 
+  margin-left: 3%;
+  margin-top: 1%;
+  box-shadow: 8px 6px 8px rgb(95, 94, 94);
+}

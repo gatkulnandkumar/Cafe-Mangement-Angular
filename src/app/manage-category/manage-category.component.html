@@ -1,0 +1,80 @@
+
+<!-- 
+<div>
+    <mat-card class="custom-card">
+        <mat-card-actions>
+            Manage Category
+            <button class="btn-add" mat-raised-button color="primary">Add Category</button>
+        </mat-card-actions>
+      </mat-card>
+</div> -->
+
+<mat-card class="category-card">
+    <div class="left-side">
+      <p>Manage Categories</p>
+    </div>
+    <div class="right-side">
+      <button mat-raised-button class="add-button" (click)="openAddCategoryDialog()">
+        <mat-icon>add_circle</mat-icon> Add Category
+      </button>
+    </div>
+  </mat-card>
+
+
+  <mat-card class="filter-card">
+        <mat-form-field>
+            <input matInput placeholder="Filter" [(ngModel)]="filterText" (input)="applyFilter($event)" />
+        </mat-form-field>
+  </mat-card>
+
+  <div class="table-category">
+    <mat-table [dataSource]="dataSource" matSort>
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+        <mat-cell *matCellDef="let category">{{ category.name }}</mat-cell>
+      </ng-container>
+    
+      <!-- Action Column -->
+      <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+        <mat-cell *matCellDef="let category">
+          <!-- <button mat-icon-button (click)="handleCategoryAction(category)">
+            <mat-icon>edit</mat-icon>
+          </button> -->
+          <ng-container *ngIf="!category.editing; else editMode">
+              <button mat-icon-button (click)="toggleEdit(category)">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </ng-container>
+            <ng-template #editMode>
+              <mat-form-field>
+                <input matInput [(ngModel)]="category.updatedName" placeholder="New Name" />
+              </mat-form-field>
+              <button mat-icon-button (click)="handleCategoryAction(category)">
+                <mat-icon>done</mat-icon>
+              </button>
+            </ng-template>
+
+            <ng-container *ngIf="!category.editing; else editMode">
+              <button mat-icon-button (click)="toggleEdit(category)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </ng-container>
+
+          <!-- You can add more action buttons/icons here -->
+        </mat-cell>
+      </ng-container>
+    
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" 
+                (page)="onPageChange($event)"></mat-paginator>
+  </div>
+
+  
+  
+   
+

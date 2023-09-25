@@ -1,0 +1,19 @@
+
+.add-category-mat {
+    width: 200px; 
+  }
+  
+  .mat-dialog-actions button {
+    margin-left: 6px;
+  }
+  
+  .mat-dialog-actions button.cancel-button {
+    color: #333;
+    background-color: #ccc;
+  }
+  
+  .mat-dialog-actions button.add-button {
+    color: white;
+    background-color: #007bff;
+  }
+  

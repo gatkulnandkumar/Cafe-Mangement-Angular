@@ -1,0 +1,45 @@
+     <form class="signup d-flex flex-column" [formGroup]="signupForm" (ngSubmit)="signup()">
+      <h1 style="text-align: center;">Signup</h1>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your Name" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="number">Contact Number:</label>
+        <input type="number" id="contactNumber" class="form-control" placeholder="Enter your Phone Number" formControlName="contactNumber">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your Email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <div class="password-input-wrapper">
+          <input [type]="passwordVisible ? 'text' : 'password'" id="password" class="form-control" placeholder="Enter your password" formControlName="password">
+          <i class="password-toggle fas" [ngClass]="{'fa-eye-slash': !passwordVisible, 'fa-eye': passwordVisible}" (click)="togglePasswordVisibility()"></i>
+        </div>
+      </div>
+      <!-- <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <div class="password-input-wrapper">
+          <input [type]="passwordVisible ? 'text' : 'password'" id="confirmPassword" class="form-control" placeholder="Enter your confirm password" formControlName="confirmPassword">
+          <i class="password-toggle fas" [ngClass]="{'fa-eye-slash': !passwordVisible, 'fa-eye': passwordVisible}" (click)="togglePasswordVisibility()"></i>
+        </div>
+      </div> -->
+      <div class="form-group my-1 d-flex justify-content-center">
+        <button type="submit" class="btn btn-success">Signup</button>
+        <button type="button" class="btn btn-secondary mx-2" (click)="cancel()">Cancel</button>
+      </div>
+      <div class="register-link my-2" style="text-align: center;font-weight: 500; margin-top: 4%;" >
+        <p>Already a Member? <a href="/login">Login Here</a></p>
+      </div>
+      <!-- <div class="login-options d-flex flex-column">
+        <button type="button" class="btn btn-primary">
+          <i class="fab fa-facebook "></i> Login with Facebook
+        </button>
+        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1426567066%3A1689138446366829&hl=en-GB&ifkv=AeDOFXjZKTtM5i5D11FhmMS6k_544RkYXTz5Q1XgCE4PmQZlXb5lwY4YUVVqv3gx5TrFEjtv6yEW0w&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" class="btn btn-outline-dark my-3">
+          <i class="fab fa-google"></i> Login with Google
+        </a>
+      </div> -->
+    </form>
+    

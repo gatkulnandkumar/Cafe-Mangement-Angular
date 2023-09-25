@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* @import "~bootstrap/dist/css/bootstrap.css." ; */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+/* 
+.black-snackbar{
+    background-color: black !important;
+    color: white !important;
+} 
+
+.green-snackbar{
+    background-color: #00ff7f !important;
+    color: black !important;
+ */
+

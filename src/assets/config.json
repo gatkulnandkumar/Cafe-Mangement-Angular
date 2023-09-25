@@ -1,0 +1,7 @@
+{
+    "signInUrl": "http://localhost:8182/",
+    "gateWayUrl": "http://localhost:8182/",
+    "checkTokenUrl":"http://localhost:8182/user/"
+
+  
+}

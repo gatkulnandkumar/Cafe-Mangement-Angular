@@ -1,0 +1,48 @@
+.float-right{
+    float: right;
+}
+
+.view{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; 
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 5px 6px 8px rgb(95, 94, 94);  
+}
+
+.filter-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; 
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 5px 6px 8px rgb(95, 94, 94);  
+}
+
+.mat-form-field {
+    width: 100%; 
+  }
+
+   table{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%; 
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-top: 1%;
+    box-shadow: 5px 6px 8px rgb(95, 94, 94);  
+}
+
